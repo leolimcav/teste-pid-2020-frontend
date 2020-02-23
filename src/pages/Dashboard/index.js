@@ -8,7 +8,9 @@ export default function Dashboard() {
   return (
     <>
       <Header />
-      <Container />
+      <Container>
+        <h1>Dashboard</h1>
+      </Container>
     </>
   );
 }

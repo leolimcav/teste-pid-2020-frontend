@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { Container, LoginContainer, Button, GButton } from './styles';
 import Glogo from '../../assets/google-hangouts.svg';
 
 export default function Login() {
+  useEffect(async () => {}, []);
   return (
     <Container>
       <LoginContainer>
@@ -12,7 +13,7 @@ export default function Login() {
           <img src={Glogo} alt="Google logo" />
           Login With Google
         </GButton>
-        <Button>Sign In</Button>
+        <Button>Sign Up</Button>
       </LoginContainer>
     </Container>
   );

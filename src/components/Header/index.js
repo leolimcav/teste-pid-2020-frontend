@@ -1,21 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Form } from '@unform/web';
 
 import Input from '../Input';
 
-// import api from '../../services/api';
-
 import { Container } from './styles';
 
 export default function Header() {
-  // const [user, setUser] = useState({});
-
   return (
     <Container>
-      <h1>Hello World</h1>
+      <h1>Contacts</h1>
       <Form>
-        <Input name="searchCPF" type="text" id="searchCPF" />
+        <Input name="searchCPF" type="text" id="searchCPF" placeholder="Procure por CPF ou RG (ex: 000.000.000-00 ou 0000000000-0)"/>
       </Form>
+      {/* <img src="" alt="" /> */}
     </Container>
   );
 }

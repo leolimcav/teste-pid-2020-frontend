@@ -1,15 +1,19 @@
 import React from 'react';
 
 import Header from '../../components/Header';
+import Sidebar from '../../components/Sidebar';
 
-import { Container } from './styles';
+import { Container, DashContainer } from './styles';
 
 export default function Dashboard() {
   return (
     <>
       <Header />
       <Container>
-        <h1>Dashboard</h1>
+        <Sidebar />
+        <DashContainer>
+          <h1>Dashboard</h1>
+        </DashContainer>
       </Container>
     </>
   );

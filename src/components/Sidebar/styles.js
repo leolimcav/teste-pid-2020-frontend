@@ -6,7 +6,6 @@ export const Container = styled.aside`
   justify-content: space-around;
   align-items: center;
   width: 19.5%;
-  height: auto;
   border-right: solid 2px #c753f8;
   padding-top: 6.5vh;
   img {
@@ -28,6 +27,7 @@ export const Container = styled.aside`
     font-size: 0.875rem;
     line-height: 1.36;
     font-weight: 300;
+    margin-bottom: 35px;
   }
 `;
 
@@ -55,6 +55,7 @@ export const Gallery = styled.div`
   display: flex;
   flex-flow: row wrap;
   width: 9.9vw;
+  margin-top: 35px;
   margin-bottom: 19px;
   img {
     width: 4.8vw;

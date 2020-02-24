@@ -22,7 +22,7 @@ export const InputContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  justify-items: center;
+  align-items: center;
 
   input {
     border: none;
@@ -40,9 +40,6 @@ export const InputContainer = styled.div`
   }
 
   svg {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     color: #c753f8;
   }
 `;

@@ -28,8 +28,9 @@ export const ButtonContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   width: 80%;
+  height: 30%;
 `;
 
 export const Button = styled.button`
@@ -39,21 +40,4 @@ export const Button = styled.button`
   background-color: #fff;
   color: #c753f8;
   border: solid 1px #f55858;
-`;
-
-export const GButton = styled.button`
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  width: 266px;
-  height: 55px;
-  color: #fff;
-  background-color: #f55858;
-  border: solid 1px #f55858;
-  border-radius: 28px;
-
-  img {
-    margin-right: 13px;
-  }
 `;

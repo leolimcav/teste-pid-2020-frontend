@@ -9,9 +9,10 @@ export const Container = styled.aside`
   border-right: solid 2px #c753f8;
   padding-top: 6.5vh;
   img {
-    width: 31.3%;
-    height: 100%;
-    object-fit: contain;
+    width: 45.3%;
+    height: 50.3%;
+    object-fit: fill;
+    image-rendering: optimizeQuality;
   }
 
   h2 {
@@ -27,7 +28,6 @@ export const Container = styled.aside`
     font-size: 0.875rem;
     line-height: 1.36;
     font-weight: 300;
-    margin-bottom: 35px;
   }
 `;
 

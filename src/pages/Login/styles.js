@@ -24,6 +24,14 @@ export const LoginContainer = styled.div`
   }
 `;
 
+export const ButtonContainer = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+`;
+
 export const Button = styled.button`
   width: 159px;
   height: 37px;
@@ -31,7 +39,6 @@ export const Button = styled.button`
   background-color: #fff;
   color: #c753f8;
   border: solid 1px #f55858;
-  margin-left: 95px;
 `;
 
 export const GButton = styled.button`

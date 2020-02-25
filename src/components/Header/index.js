@@ -1,4 +1,6 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
+
 import { Form } from '@unform/web';
 import { FaSearch } from 'react-icons/fa';
 
@@ -6,11 +8,18 @@ import Input from '../Input';
 
 import { Container, InputContainer, Button } from './styles';
 
-export default function Header() {
+export default function Header({ searchCPF }) {
+  const history = useHistory();
+
+  function handleLogout() {
+    localStorage.clear();
+
+    history.push('/');
+  }
   return (
     <Container>
       <h1>Contacts</h1>
-      <Form>
+      <Form onSubmit={searchCPF}>
         <InputContainer>
           <Input
             name="searchCPF"
@@ -21,7 +30,7 @@ export default function Header() {
           <FaSearch id="icon" />
         </InputContainer>
       </Form>
-      <Button>Desconectar</Button>
+      <Button onClick={handleLogout}>Desconectar</Button>
     </Container>
   );
 }

@@ -1,5 +1,8 @@
 import axios from 'axios';
 
-export default axios.create({
-  baseURL: 'https://teste-pdi-backend.herokuapp.com/',
+const api = axios.create({
+  baseURL: 'https://teste-pdi-backend.herokuapp.com',
+  // baseURL: 'http://localhost:3333/',
 });
+
+export default api;

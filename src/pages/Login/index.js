@@ -1,10 +1,17 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import { Container, LoginContainer, Button, GButton } from './styles';
+import {
+  Container,
+  LoginContainer,
+  Button,
+  GButton,
+  ButtonContainer,
+} from './styles';
+
 import Glogo from '../../assets/google-hangouts.svg';
 
 export default function Login() {
-  useEffect(async () => {}, []);
   return (
     <Container>
       <LoginContainer>
@@ -13,7 +20,14 @@ export default function Login() {
           <img src={Glogo} alt="Google logo" />
           Login With Google
         </GButton>
-        <Button>Sign Up</Button>
+        <ButtonContainer>
+          <Link to="/signin">
+            <Button>Sign In</Button>
+          </Link>
+          <Link to="/signup">
+            <Button>Sign Up</Button>
+          </Link>
+        </ButtonContainer>
       </LoginContainer>
     </Container>
   );

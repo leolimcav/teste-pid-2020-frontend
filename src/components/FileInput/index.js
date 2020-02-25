@@ -33,34 +33,22 @@ export default function FileInput({ name, ...rest }) {
 
   return (
     <>
-      <label htmlFor={fieldName} id="thumbnail">
-        {preview && (
-          <img
-            src={preview}
-            alt="Preview"
-            width="100%"
-            height="100%"
-            style={{ borderRadius: '28px', border: 'none' }}
-          />
-        )}
-        {preview ? (
-          <input
-            type="file"
-            ref={inputRef}
-            onChange={handlePreview}
-            style={{ display: 'none' }}
-            {...rest}
-          />
-        ) : (
-          <input
-            type="file"
-            ref={inputRef}
-            onChange={handlePreview}
-            {...rest}
-          />
-        )}
-      </label>
-
+      {preview && (
+        <img
+          src={preview}
+          alt="Preview"
+          width="100%"
+          height="100%"
+          style={{ borderRadius: '28px', border: 'none' }}
+        />
+      )}
+      <input
+        type="file"
+        ref={inputRef}
+        defaultValue={defaultValue}
+        onChange={handlePreview}
+        {...rest}
+      />
       {error && <span>{error}</span>}
     </>
   );

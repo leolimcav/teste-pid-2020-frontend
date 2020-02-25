@@ -71,7 +71,11 @@ export const ListRow = styled.div`
 export const ListItem = styled.div`
   display: flex;
   flex-flow: column wrap;
+
   img {
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
     margin-bottom: 5px;
   }
 
@@ -83,6 +87,8 @@ export const ListItem = styled.div`
       rgba(128, 128, 128, 0) -5%
     );
   }
+
+  margin: 0 6px 0 6px;
 `;
 
 export const ItemTitle = styled.div`
